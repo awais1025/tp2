@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelles Balises </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="conteneur">
+        <header>
+            <nav>
+
+                <div class="left">
+                    <a href="http://167.114.152.54/~darquest1/prod/" target="_blank">Le Darquest</a>
+                    <a href="http://167.114.152.54/~knapsak3/" target="_blank">Knapsak</a>
+                    <a href="./wow.html" target="_blank">WOW</a>
+                </div>
+                <div class="right">
+                    <a href="https://clg.qc.ca/" target="_blank">Mon cégep</a>
+                    <a href="../TP1/index.html" target="_blank">Tp1</a>
+                </div>
+
+            </nav>
+        </header>
+        <main>
+            <h2>Explication de nouvelles balises</h2>
+            <p>La pseudo-classe :hover en CSS permet de changer l'apparence d'un élément quand on passe la souris
+                dessus.
+                C’est super utile pour rendre les pages web plus interactives. Par exemple,
+                on peut l'utiliser pour changer la couleur d'un lien, ajouter un effet de zoom sur une image ou changer
+                la couleur d'un bouton quand on le survole.
+                Cela aide à montrer à l'utilisateur que l'élément est cliquable ou interactif.</p>
+            <p>La propriété border-radius permet de rendre les coins d'un élément arrondis. Lorsqu'elle est appliquée à
+                une image,
+                elle peut donner un effet de coins
+                arrondis ou même de cercle si la largeur et la hauteur de l'image sont égales.</p>
+            <p> La propriété CSS opacity permet de définir le niveau de transparence d'un élément, ce qui affecte non
+                seulement l'arrière-plan de l'élément,
+                mais aussi son contenu, y compris le texte, les images, et les bordures.
+                Elle prend une valeur numérique entre 0 et 1, où 0 signifie totalement transparent
+                (invisible) et 1 signifie totalement opaque (visible). Par exemple, opacity: 0.5; rendra l'élément
+                semi-transparent, permettant de voir à travers celui-ci.</p>
+        </main>
+
+        <figure>
+            <img src="image/wow.jpg" alt="ocean" id="imageRonde">
+            <figCaption>
+                Visuel du Border-Radius
+            </figCaption>
+        </figure>
+        <aside id="asideWow">
+            <h3>Quelques informations pertinentes sur les balises et pseudo-classe</h3>
+            <ol class="orderlist">
+                <li>Il est conseillé de mettre :visited avant :hover pour éviter que le style de survol ne soit appliqué
+                    à un lien visité.
+                    Car si vous inversez cet ordre, il pourrait y avoir des comportements inattendus, car les styles
+                    définis par
+                    :hover risquent d'entrer en conflit avec ceux de :visited.
+                </li>
+                <li>Une information utile sur la propriété border-radius en CSS est qu'elle peut être utilisée non
+                    seulement pour arrondir les
+                    coins d'un élément,
+                    mais aussi pour créer des formes entièrement personnalisées, comme des cercles ou des ovales, en
+                    ajustant les valeurs des coins.</li>
+                <li>vous pouvez animer l'opacité d'un élément pour qu'il devienne progressivement plus ou moins
+                    transparent lorsqu'un utilisateur
+                    interagit avec la page (comme en survolant un élément avec :hover), ce qui crée un effet visuel de
+                    fondu enchaîné.</li>
+
+            </ol>
+        </aside>
+        <article>
+            <h1>Des test visuels des Pseudo-classes</h1>
+            <p>Test visuel du Hover : <a href="https://clg.qc.ca/">Placer la souris ici</a><br>Test visuel de l'opacité
+                d'une image avec un Hover!:</p>
+            <img src="image/wow.jpg" alt="ocean" id="imageOpaque">
+
+
+
+        </article>
+        <footer>&#128511; &copy; Fait par Ali Jafar Wais</footer>
+    </div>
+</body>
+
+</html>

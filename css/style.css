@@ -1,0 +1,149 @@
+img {
+    max-width: 350px;
+    margin: auto;
+}
+
+figure {
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    width: fit-content;
+    float: left;
+}
+
+#conteneur {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1fr 2fr 0.5fr;
+    margin: auto;
+    grid-template-areas:
+        "header header     header"
+        "main   main       aside"
+        "main   main       aside"
+        "figure article    aside "
+        "footer footer     footer";
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+    color: white;
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+    
+
+}
+
+section {
+    grid-area: section;
+    background-color: green;
+}
+
+#asideWow {
+    grid-area: aside;
+    background-color: bisque;
+}
+#asideFallout{
+    grid-area: aside;
+    background-color:rgb(2, 160, 212);
+}
+
+footer {
+    grid-area: footer;
+    background-color:grey;
+    color:black;
+    text-align: right;
+}
+
+figCaption {
+    text-align: left;
+    font-style: italic;
+}
+
+article {
+    grid-area: article;
+    background-color: white;
+}
+
+nav {
+    color: white;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+}
+
+a {
+    color:darkgrey
+}
+  a:hover {
+    color: blue;
+}
+
+  
+.right {
+    float: right;
+    padding: 10px;
+}
+
+.left {
+    float: left;
+    padding: 10px;
+}
+
+p {
+    font-size: x-large;
+    font-style: italic;
+}
+
+.unorderlist {
+    list-style-type: none;
+
+}
+
+.unorderlist li {
+   padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.orderlist {
+    list-style-type:disc;
+    margin-bottom: 15px;
+}
+h3{
+    padding:10px
+
+}
+.left a, .right a {
+    margin-right: 30px; 
+    text-decoration: none; 
+}
+
+.left a:last-child, .right a:last-child {
+    margin-right: 0; 
+}
+footer{
+    padding: 15px;
+}
+#imageRonde{
+    border-radius: 50%;
+}
+figcaption{
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+#imageOpaque:hover{
+    opacity: 0.5;
+}
+#imageOpaque{
+    margin-left: 100px;
+}
